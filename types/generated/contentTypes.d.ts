@@ -601,6 +601,35 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
+  collectionName: 'globals';
+  info: {
+    displayName: 'Global';
+    pluralName: 'globals';
+    singularName: 'global';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::global.global'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    siteName: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHeroSectionHeroSection extends Struct.SingleTypeSchema {
   collectionName: 'hero_sections';
   info: {
@@ -1422,6 +1451,7 @@ declare module '@strapi/strapi' {
       'api::colors-section.colors-section': ApiColorsSectionColorsSection;
       'api::details-section.details-section': ApiDetailsSectionDetailsSection;
       'api::footer.footer': ApiFooterFooter;
+      'api::global.global': ApiGlobalGlobal;
       'api::hero-section.hero-section': ApiHeroSectionHeroSection;
       'api::inside-box-section.inside-box-section': ApiInsideBoxSectionInsideBoxSection;
       'api::main-n-av.main-n-av': ApiMainNAvMainNAv;

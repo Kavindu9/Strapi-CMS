@@ -63,6 +63,20 @@ export interface FooterFooterLink extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSeo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'SEO';
+  };
+  attributes: {
+    metaDescription: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    preventIndexing: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    shareImage: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface SmartPaperSlide extends Struct.ComponentSchema {
   collectionName: 'components_smart_paper_slides';
   info: {
@@ -106,6 +120,7 @@ declare module '@strapi/strapi' {
       'details.details-section': DetailsDetailsSection;
       'details.gallery-tile': DetailsGalleryTile;
       'footer.footer-link': FooterFooterLink;
+      'shared.seo': SharedSeo;
       'smart-paper.slide': SmartPaperSlide;
       'specs.spec-group': SpecsSpecGroup;
       'specs.spec-item': SpecsSpecItem;
