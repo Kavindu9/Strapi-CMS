@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_specs_spec_groups",
+  "info": {
+    "displayName": "Spec Group"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "specs.spec-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "colors_sections",
+  "info": {
+    "singularName": "colors-section",
+    "pluralName": "colors-sections",
+    "displayName": "Colors Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slides": {
+      "type": "component",
+      "component": "colors.color-slide",
+      "repeatable": true
+    }
+  }
+}

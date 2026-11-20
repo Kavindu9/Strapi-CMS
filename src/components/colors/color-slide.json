@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_colors_color_slides",
+  "info": {
+    "displayName": "Color Slide"
+  },
+  "options": {},
+  "attributes": {
+    "leftText": {
+      "type": "string"
+    },
+    "rightText": {
+      "type": "string"
+    },
+    "penImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff",
+      "regex": "^#[0-9a-fA-F]{6}$"
+    },
+    "gradientTop": {
+      "type": "string",
+      "regex": "^#[0-9a-fA-F]{6}$"
+    },
+    "gradientMiddle": {
+      "type": "string"
+    },
+    "gradientBottom": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_smart_paper_slides",
+  "info": {
+    "displayName": "Slide"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageLayout": {
+      "type": "enumeration",
+      "enum": [
+        "centered",
+        "fullscreen"
+      ]
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "cardText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

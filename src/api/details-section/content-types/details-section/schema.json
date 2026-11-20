@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "details_sections",
+  "info": {
+    "singularName": "details-section",
+    "pluralName": "details-sections",
+    "displayName": "Details Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featureTiles": {
+      "type": "component",
+      "component": "details.details-section",
+      "repeatable": true
+    },
+    "galleryTiles": {
+      "type": "component",
+      "component": "details.gallery-tile",
+      "repeatable": true
+    }
+  }
+}

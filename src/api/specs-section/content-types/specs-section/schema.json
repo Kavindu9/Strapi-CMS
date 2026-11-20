@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "specs_sections",
+  "info": {
+    "singularName": "specs-section",
+    "pluralName": "specs-sections",
+    "displayName": "Specs Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "penImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "groups": {
+      "type": "component",
+      "component": "specs.spec-group",
+      "repeatable": true
+    }
+  }
+}

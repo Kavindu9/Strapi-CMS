@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_n_avs",
+  "info": {
+    "singularName": "main-n-av",
+    "pluralName": "main-n-avs",
+    "displayName": "Main Nav"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logoText": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "component": "footer.footer-link",
+      "repeatable": true
+    },
+    "brandMark": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "orderLabel": {
+      "type": "string"
+    },
+    "orderProduct": {
+      "type": "string"
+    },
+    "orderPrice": {
+      "type": "string"
+    },
+    "orderUrl": {
+      "type": "string"
+    }
+  }
+}

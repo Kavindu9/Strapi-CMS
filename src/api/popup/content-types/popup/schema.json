@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "popups",
+  "info": {
+    "singularName": "popup",
+    "pluralName": "popups",
+    "displayName": "Popup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "closeLabel": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "duplicateMessage": {
+      "type": "string"
+    }
+  }
+}

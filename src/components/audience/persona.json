@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_audience_personas",
+  "info": {
+    "displayName": "Persona"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showcaseImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

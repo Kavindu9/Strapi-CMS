@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_specs_spec_items",
+  "info": {
+    "displayName": "Spec Item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

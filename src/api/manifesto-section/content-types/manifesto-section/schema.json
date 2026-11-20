@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "manifesto_sections",
+  "info": {
+    "singularName": "manifesto-section",
+    "pluralName": "manifesto-sections",
+    "displayName": "Manifesto Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "statement": {
+      "type": "text"
+    },
+    "audienceLabel": {
+      "type": "string"
+    },
+    "audienceText": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "smart_paper_sections",
+  "info": {
+    "singularName": "smart-paper-section",
+    "pluralName": "smart-paper-sections",
+    "displayName": "Smart Paper Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "component",
+      "component": "smart-paper.slide",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "audience_sections",
+  "info": {
+    "singularName": "audience-section",
+    "pluralName": "audience-sections",
+    "displayName": "Audience Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personas": {
+      "type": "component",
+      "component": "audience.persona",
+      "repeatable": true
+    },
+    "showcaseVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "inside_box_sections",
+  "info": {
+    "singularName": "inside-box-section",
+    "pluralName": "inside-box-sections",
+    "displayName": "Inside Box Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "boxImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "setTitle": {
+      "type": "string"
+    },
+    "setText": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
