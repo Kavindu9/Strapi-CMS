@@ -114,9 +114,15 @@ The browser never talks to Strapi's write API. The Public role can't read or cre
 ## What I'd improve with more time
 
 **Robustness**
-- **Resilient data fetching:** today, if one section is unpublished, the whole page errors. Each fetcher should return `null` so the page skips that section instead of crashing.
+- **Resilient data fetching:** today, if one section is unpublished, the whole page errors. Each fetcher should return `null` so the page skips that section 
+instead of crashing.
 **Performance**
 - **Media on a CDN**  instead of Strapi's local `uploads` folder. Serve WebM/AV1 versions of the scrubbed videos with an MP4 fallback.
 
 **Deployment**
 - **CI/CD:** the website on Vercel and the CMS on Strapi Cloud or Railway with PostgreSQL. Build and lint checks on every pull request.
+
+
+## AI Tools
+- **Anthropic** Extract images to build animation
+- **Claud** To get support to identify the infastructure and fine tuning
